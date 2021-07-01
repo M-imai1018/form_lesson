@@ -30,8 +30,92 @@
             <!--
               ここに続きのHTMLを書いていきましょう
             -->
-            <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
-          </form>
+            <div class="name_form">
+                <p class="name_state wid">名字 <span class="color">※</span>
+                    <input type="text" required class="name_box">
+                </p>
+                <p class="name_state wid">名前 <span class="color">※</span>
+                    <input type="text" required class="name_box">
+                </p>
+            </div>
+            <div class="form_top">
+              <div class="">
+                <label for="name">性別</label>
+                <ul class="gender">
+                  <li>
+                    <label for="man">
+                      <input type="radio" name="gender" id="man">男性
+                    </label>
+                  </li>
+                  <li>
+                    <label for="lady">
+                      <input type="radio" name="gender" id="lady">女性
+                    </label>
+                  </li>
+                  <li>
+                    <label for="other">
+                      <input type="radio" name="gender" id="other">その他
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p>出身<br>
+                  <select name="from" id="" class="from_state">
+                    <option value="東京">東京</option>
+                    <option value="千葉">千葉</option>
+                    <option value="埼玉">埼玉</option>
+                    <option value="神奈川">神奈川</option>
+                  </select>
+                </p>
+              </div>
+              <div>
+                <p>Eメール <span class="color">※</span><br>
+                  <input type="email" name="" id="" placeholder="ex)hoge@example.com" required class="common_state">
+                </p>
+              </div>
+              <div>
+                <p>電話番号<br>
+                  <input type="tel" name="" id="" placeholder="ex)09012345678" class="common_state">
+                </p>
+              </div>
+              <div>
+                <p>パスワード <span class="color">※</span><br>
+                  <input type="password" name="" id="" required class="common_state">
+                </p>
+              </div>
+              <div>
+                <p>パスワード(確認用) <span class="color">※</span><br>
+                  <input type="password" name="" id="" required class="common_state">
+                </p>
+              </div>
+              <div>
+                <div class="chkbox">
+                  <label>希望コース<br>
+                    <label for="front" class="checkbox_state">
+                      <input type="checkbox" name="" id="front" class="checkbox_style">フロントエンド
+                    </label>
+                    <label for="back" class="checkbox_state">
+                      <input type="checkbox" name="" id="back" class="checkbox_style">バックエンド
+                    </label>
+                    <label for="app" class="checkbox_state">
+                      <input type="checkbox" name="" id="app" class="checkbox_style">アプリ
+                    </label>
+                  </label>
+                </div>
+                <div>
+                  <p>備考<br>
+                    <textarea name="biko" id="" cols="30" rows="10" placeholder="何かあればご記入ください" class="biko_state"></textarea>
+                  </p>
+                </div>
+                <div>
+                  <input type="submit" value="アカウント作成" required class="acount_made">
+                </div>
+              </div>
+              <div></div>
+              <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
+            </form>
+            </div>
         </div>
         <div class="foot-part">
           <p>すでにアカウントをお持ちですか？ <a class="link-color" href>ログイン</a></p>
