@@ -166,42 +166,35 @@
 }
 
 /* 自作 */
-
-.color {
-  color: #dd4b39;
+.form_siz {
+  font-size: 12px;
 }
 
-.name_state {
-  margin-left: 16px;
-}
-
-.name_state:first-child {
-  margin-left: 0;
-}
-
-.wid {
-  width: 50%;
-}
-
-.form_top div {
+.element__top {
   margin-top: 20px;
 }
 
-.form_top {
-  font-size: 12px;
+.halfwid {
+  width: 50%;
 }
 
-.name_lab {
-  font-size: 12px;
+.asterisk__color {
+  color: #dd4b39;
 }
 
 .name_form {
   display: flex;
-  justify-content: space-between;
-  font-size: 12px;
 }
 
-.name_box {
+.name_form p {
+  margin-left: 16px;
+}
+
+.name_form p:first-child {
+  margin-left: 0;
+}
+
+.name_form input {
   box-sizing: border-box;
   background-color: #fbfbfb;
   border: 1px solid #d9d9d9;
@@ -211,24 +204,61 @@
   margin-top: 5px;
 }
 
-.mar {
-  margin-left: 20px;
+.gender label,input,span {
+  box-sizing: border-box;
 }
 
-.gender {
-  list-style: none;
+.gender div {
   display: flex;
 }
 
-.gender li {
-  margin-left: 10px;
+.gender_top {
   margin-top: 5px;
-  font-size: 15px;
 }
 
-.gender li:first-child {
+.radio {
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.radio:first-child {
   margin-left: 0;
 }
+
+.radio__state {
+  appearance: none;
+  position: absolute;
+}
+
+.radio__text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.radio__text::before {
+  content: '';
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+  width: 16px;
+  height: 16px;
+}
+
+.radio__state:checked + .radio__text::after {
+  content: '';
+  display: block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #01bfbd;
+  position: absolute;
+  left: 4px;
+}
+
 
 .acount_made {
   width: 100%;
@@ -273,15 +303,48 @@
   border-radius: 3px;
   margin-top: 5px;
   height: 32px;
-  color: #d9d9d9;
 }
 
-.checkbox_state {
+.chkbox__top {
   display: block;
+  margin-top: 8px;
 }
 
-.checkbox_style {
-  margin-top: 5px;
-  font-size: 20px;
+.chkbox label,input,span {
+  box-sizing: border-box;
 }
 
+.chkbox input {
+  appearance: none;
+  position: absolute;
+}
+
+.chkbox__text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.chkbox__text::before {
+  content: '';
+  left: 0;
+  display: block;
+  border: 1px solid #d9d9d9;
+  width: 16px;
+  height: 16px;
+}
+
+.chkbox__state:checked+.chkbox__text::after {
+  content: '';
+  position: absolute;
+  top: -6.5px;
+  left: 6px;
+  display: block;
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+  width: 10px;
+  height: 20px;
+  transform: rotate(45deg);
+}
