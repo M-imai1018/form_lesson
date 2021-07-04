@@ -40,20 +40,14 @@
                 </p>
               </div>
               <div class="element__top gender">
-                <p>性別</p>
-                <div class="gender_top">
-                  <label class="radio">
-                    <input type="radio" name="gender" class="radio__state">
-                    <span class="radio__text">男性</span>
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="gender" class="radio__state">
-                    <span class="radio__text"> 女性</span>
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="gender" class="radio__state">
-                    <span class="radio__text"> その他</span>
-                  </label>
+                <p class="gender_state">性別</p>
+                <div class="gender__top">
+                  <input class="common_gender" type="radio" name="gender" id="aaa"/>
+                  <label for="aaa">男性</label>
+                  <input class="common_gender" type="radio" name="gender" id="bbb"/>
+                  <label for="bbb">女性</label>
+                  <input class="common_gender" type="radio" name="gender" id="ccc"/>
+                  <label for="ccc">その他</label>
                 </div>
               </div>
               <div class="element__top">
@@ -68,12 +62,12 @@
               </div>
               <div class="element__top">
                 <p>Eメール <span class="asterisk__color">※</span><br>
-                  <input type="email" name="" id="" placeholder="ex)hoge@example.com" required class="common_state">
+                  <input type="email" name="" id="" placeholder="ex) hoge@example.com" required class="common_state">
                 </p>
               </div>
               <div class="element__top">
                 <p>電話番号<br>
-                  <input type="tel" name="" id="" placeholder="ex)09012345678" class="common_state">
+                  <input type="tel" name="" id="" placeholder="ex) 09012345678" class="common_state">
                 </p>
               </div>
               <div class="element__top">
@@ -87,20 +81,14 @@
                 </p>
               </div>
               <div  class="element__top chkbox">
-                <p>希望</p>
-                <div>
-                  <label class="chkbox__top">
-                    <input type="checkbox" name="chkbox" class="chkbox__state">
-                    <span class="chkbox__text">フロントエンド</span>
-                  </label>
-                  <label class="chkbox__top">
-                    <input type="checkbox" name="chkbox" class="chkbox__state">
-                    <span class="chkbox__text">バックエンド</span>
-                  </label>
-                  <label class="chkbox__top">
-                    <input type="checkbox" name="chkbox" class="chkbox__state">
-                    <span class="chkbox__text">アプリ</span>
-                  </label>
+                <p>希望コース</p>
+                <div class="common_chkbox">
+                  <input type="checkbox" name="want" id="eee">
+                  <label for="eee">フロントエンド</label>
+                  <input type="checkbox" name="want" id="fff">
+                  <label for="fff">バックエンド</label>
+                  <input type="checkbox" name="want" id="ggg">
+                  <label for="ggg">アプリ</label>
                 </div>
               </div>
               <div class="element__top">

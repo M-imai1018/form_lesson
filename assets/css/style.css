@@ -168,6 +168,7 @@
 /* 自作 */
 .form_siz {
   font-size: 12px;
+  color: #4e4e4e;
 }
 
 .element__top {
@@ -200,7 +201,7 @@
   border: 1px solid #d9d9d9;
   border-radius: 3px;
   width: 100%;
-  height: 32px;
+  height: 36px;
   margin-top: 5px;
 }
 
@@ -208,61 +209,71 @@
   box-sizing: border-box;
 }
 
-.gender div {
+.gender {
   display: flex;
+  flex-flow: column;
 }
 
 .gender_top {
   margin-top: 5px;
 }
 
-.radio {
-  margin-left: 10px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.radio:first-child {
-  margin-left: 0;
-}
-
-.radio__state {
+.gender input {
   appearance: none;
-  position: absolute;
 }
 
-.radio__text {
+.gender__top {
+  margin-top: 9px;
+}
+
+.gender label {
   position: relative;
-  display: flex;
-  align-items: center;
-  font-size: 13px;
-  margin-right: 5px;
+  padding-left: 20px;
+  font-size: 16px;
 }
 
-.radio__text::before {
-  content: '';
-  display: inline-block;
-  border-radius: 50%;
-  border: 1px solid #d9d9d9;
-  width: 16px;
-  height: 16px;
+.gender input:first-child {
+  display: none;
 }
 
-.radio__state:checked + .radio__text::after {
+.gender input {
+  margin-right: 8px;
+}
+
+.gender input + label::before {
+  position: absolute;
   content: '';
   display: block;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  background-color: #01bfbd;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  left: 0;
+  top: 0;
+}
+
+.gender input + label::after {
   position: absolute;
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #01bfbd;
   left: 4px;
+  top: 4px;
+  opacity: 0;
+}
+
+.gender input:checked+ label::after {
+  opacity: 1;
 }
 
 
 .acount_made {
   width: 100%;
-  height: 50px;
+  height: 47px;
   border: 1px solid #01bfbd;
   border-radius: 3px;
   background-color: #01bfbd;
@@ -270,13 +281,15 @@
 }
 
 .biko_state {
+  box-sizing: border-box;
+  resize: none;
   margin-top: 5px;
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: #fbfbfb;
   border: 1px solid #d9d9d9;
   border-radius: 3px;
-  padding: 13px 0 0 5px;
+  padding: 10px 0 0 5px;
   font-size: 13px;
 }
 
@@ -286,7 +299,7 @@
   border: 1px solid #d9d9d9;
   border-radius: 3px;
   margin-top: 5px;
-  height: 32px;
+  height: 36px;
 }
 
 .common_state:focus {
@@ -310,41 +323,57 @@
   margin-top: 8px;
 }
 
+.common_chkbox {
+  display: flex;
+  flex-flow: column;
+}
+
 .chkbox label,input,span {
   box-sizing: border-box;
 }
 
 .chkbox input {
+  display: none;
   appearance: none;
-  position: absolute;
+  margin-right: 8px;
 }
 
-.chkbox__text {
+.chkbox label {
   position: relative;
-  display: flex;
-  align-items: center;
-  font-size: 13px;
-  margin-right: 5px;
+  padding-left: 25px;
+  font-size: 16px;
+  margin-top: 8px;
 }
 
-.chkbox__text::before {
-  content: '';
-  left: 0;
-  display: block;
-  border: 1px solid #d9d9d9;
-  width: 16px;
-  height: 16px;
+.chkbox label:first-of-type {
+  margin-top: 3px;
 }
 
-.chkbox__state:checked+.chkbox__text::after {
+.chkbox input + label::before {
   content: '';
   position: absolute;
-  top: -6.5px;
-  left: 6px;
   display: block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #d9d9d9;
+  left: 0;
+  top: 0;
+}
+
+.chkbox input + label::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 7px;
+  height: 15px;
+  transform: rotate(45deg);
   border-right: 3px solid #01bfbd;
   border-bottom: 3px solid #01bfbd;
-  width: 10px;
-  height: 20px;
-  transform: rotate(45deg);
+  left: 5.5px;
+  top: -4px;
+  opacity: 0;
+}
+
+.chkbox input:checked + label::after {
+  opacity: 1;
 }
