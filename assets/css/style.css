@@ -215,7 +215,7 @@
 }
 
 .gender_top {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .gender input {
@@ -223,13 +223,15 @@
 }
 
 .gender__top {
-  margin-top: 9px;
+  margin-top: 4px;
+  height: 20px;
 }
 
 .gender label {
   position: relative;
   padding-left: 20px;
   font-size: 16px;
+  top: 4px;
 }
 
 .gender input:first-child {
@@ -309,14 +311,43 @@
   box-shadow: 10px rgba(0, 243, 212, 0.8);
 }
 
-.from_state {
+.select__wrap select {
+  position: relative;
+  margin-top: 5px;
+  height: 35px;
   width: 50%;
+  padding: 5px;
   background-color: #fbfbfb;
   border: 1px solid #d9d9d9;
   border-radius: 3px;
-  margin-top: 5px;
-  height: 32px;
+  color: #545658;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
+
+.select__wrap {
+  position: relative;
+  width: 100%;
+}
+
+.select__wrap::after {
+  content: '';
+  position: absolute;
+  top: 23px;
+  left: 239px;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #d9d9d9;
+  border-left: 2px solid #d9d9d9;
+  transform: translateY(-50%) rotate(-135deg);
+  pointer-events: none
+}
+
+
+
+
+
 
 .chkbox__top {
   display: block;
@@ -377,3 +408,4 @@
 .chkbox input:checked + label::after {
   opacity: 1;
 }
+
