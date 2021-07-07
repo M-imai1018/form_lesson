@@ -242,7 +242,6 @@
 
 .gender input {
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -303,7 +302,6 @@
   border-radius: 3px;
   color: #545658;
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   outline: none;
 }
@@ -338,7 +336,6 @@
 
 .chkbox input {
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   margin-right: 8px;
 }
