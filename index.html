@@ -33,30 +33,30 @@
             <div class="form_siz">
               <div class="name_form">
                 <p class="halfwid">名字 <span class="asterisk__color">※</span>
-                    <input type="text" required>
+                  <input class="common_state common__shape" type="text" required>
                 </p>
                 <p class="halfwid">名前 <span class="asterisk__color">※</span>
-                  <input type="text" required>
+                  <input class="common_state common__shape" type="text" required>
                 </p>
               </div>
               <div class="element__top">
                 <div class="gender">
                   <p class="gender_state">性別</p>
                   <div class="gender__top">
-                    <input class="common_gender" type="radio" name="gender" id="aaa"/>
-                    <label for="aaa">男性</label>
-                    <input class="common_gender" type="radio" name="gender" id="bbb"/>
-                    <label for="bbb">女性</label>
-                    <input class="common_gender" type="radio" name="gender" id="ccc"/>
-                    <label for="ccc">その他</label>
+                    <input class="common_gender" type="radio" name="gender" id="man"/>
+                    <label for="man">男性</label>
+                    <input class="common_gender" type="radio" name="gender" id="lady"/>
+                    <label for="lady">女性</label>
+                    <input class="common_gender" type="radio" name="gender" id="other"/>
+                    <label for="other">その他</label>
                   </div>
                 </div>
               </div>
               <div class="element__top">
                 <p>出身</p>
-                <div class="select__wrap">
+                <div class="from__wrap">
                   <select>
-                    <option value="">東京</option>
+                    <option value="東京">東京</option>
                     <option value="千葉">千葉</option>
                     <option value="埼玉">埼玉</option>
                     <option value="神奈川">神奈川</option>
@@ -65,42 +65,42 @@
               </div>
               <div class="element__top">
                 <p>Eメール <span class="asterisk__color">※</span><br>
-                  <input type="email" name="" id="" placeholder="ex) hoge@example.com" required class="common_state">
+                  <input type="email" placeholder="ex) hoge@example.com" class="wid common_state common__shape" required>
                 </p>
               </div>
               <div class="element__top">
                 <p>電話番号<br>
-                  <input type="tel" name="" id="" placeholder="ex) 09012345678" class="common_state">
+                  <input type="tel" placeholder="ex) 09012345678" class="wid common_state common__shape">
                 </p>
               </div>
               <div class="element__top">
                 <p>パスワード <span class="asterisk__color">※</span><br>
-                  <input type="password" name="" id="" required class="common_state">
+                  <input type="password" required class="wid common_state common__shape">
                 </p>
               </div>
               <div class="element__top">
                 <p>パスワード(確認用) <span class="asterisk__color">※</span><br>
-                  <input type="password" name="" id="" required class="common_state">
+                  <input type="password" class="wid common_state common__shape" required>
                 </p>
               </div>
               <div  class="element__top chkbox">
                 <p>希望コース</p>
                 <div class="common_chkbox">
-                  <input type="checkbox" name="want" id="eee">
-                  <label for="eee">フロントエンド</label>
-                  <input type="checkbox" name="want" id="fff">
-                  <label for="fff">バックエンド</label>
-                  <input type="checkbox" name="want" id="ggg">
-                  <label for="ggg">アプリ</label>
+                  <input type="checkbox" name="want" id="フロントエンド">
+                  <label for="フロントエンド">フロントエンド</label>
+                  <input type="checkbox" name="want" id="バックエンド">
+                  <label for="バックエンド">バックエンド</label>
+                  <input type="checkbox" name="want" id="アプリ">
+                  <label for="アプリ">アプリ</label>
                 </div>
               </div>
               <div class="element__top">
                 <p>備考<br>
-                  <textarea name="biko" id="" cols="30" rows="10" placeholder="何かあればご記入ください" class="biko_state"></textarea>
+                  <textarea name="biko" cols="30" rows="10" placeholder="何かあればご記入ください" class="biko_state common_state"></textarea>
                 </p>
               </div>
               <div class="element__top">
-                <input type="submit" value="アカウント作成" required class="acount_made">
+                <input type="submit" value="アカウント作成" class="wid acount_made" required>
               </div>
             </div>
             <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>

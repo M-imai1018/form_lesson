@@ -166,6 +166,8 @@
 }
 
 /* 自作 */
+
+/* 共通 */
 .form_siz {
   font-size: 12px;
   color: #4e4e4e;
@@ -175,14 +177,37 @@
   margin-top: 20px;
 }
 
+.wid {
+  width: 100%;
+}
+
 .halfwid {
   width: 50%;
+}
+
+.common_state {
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+
+.common_state:focus {
+  background-color: #fff;
+  outline: none;
+  border: 1px solid #5f9ea0;
+  box-shadow: 0 0 .5px 1.5px rgba(0, 193, 230, 0.27);
+}
+
+.common__shape {
+  height: 36px;
+  margin-top: 5px;
 }
 
 .asterisk__color {
   color: #dd4b39;
 }
 
+/* 氏名 */
 .name_form {
   display: flex;
 }
@@ -197,14 +222,10 @@
 
 .name_form input {
   box-sizing: border-box;
-  background-color: #fbfbfb;
-  border: 1px solid #d9d9d9;
-  border-radius: 3px;
   width: 100%;
-  height: 36px;
-  margin-top: 5px;
 }
 
+/* 性別 */
 .gender label,input,span {
   box-sizing: border-box;
 }
@@ -214,17 +235,19 @@
   flex-flow: column;
 }
 
-.gender_top {
-  margin-top: 8px;
+.gender__top {
+  margin-top: 5px;
+  height: 20px;
 }
 
 .gender input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 
-.gender__top {
-  margin-top: 4px;
-  height: 20px;
+.gender input:first-child {
+  display: none;
 }
 
 .gender label {
@@ -234,12 +257,8 @@
   top: 4px;
 }
 
-.gender input:first-child {
-  display: none;
-}
-
-.gender input {
-  margin-right: 8px;
+.gender label {
+  cursor : pointer;
 }
 
 .gender input + label::before {
@@ -272,46 +291,8 @@
   opacity: 1;
 }
 
-
-.acount_made {
-  width: 100%;
-  height: 47px;
-  border: 1px solid #01bfbd;
-  border-radius: 3px;
-  background-color: #01bfbd;
-  color: #fff;
-}
-
-.biko_state {
-  box-sizing: border-box;
-  resize: none;
-  margin-top: 5px;
-  width: 100%;
-  height: 100px;
-  background-color: #fbfbfb;
-  border: 1px solid #d9d9d9;
-  border-radius: 3px;
-  padding: 10px 0 0 5px;
-  font-size: 13px;
-}
-
-.common_state {
-  width: 100%;
-  background-color: #fbfbfb;
-  border: 1px solid #d9d9d9;
-  border-radius: 3px;
-  margin-top: 5px;
-  height: 36px;
-}
-
-.common_state:focus {
-  background-color: #fff;
-  border-color: #8fbc8f;
-  outline: none;
-  box-shadow: 10px rgba(0, 243, 212, 0.8);
-}
-
-.select__wrap select {
+/* 出身 */
+.from__wrap select {
   position: relative;
   margin-top: 5px;
   height: 35px;
@@ -324,14 +305,15 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline: none;
 }
 
-.select__wrap {
+.from__wrap {
   position: relative;
   width: 100%;
 }
 
-.select__wrap::after {
+.from__wrap::after {
   content: '';
   position: absolute;
   top: 23px;
@@ -344,16 +326,7 @@
   pointer-events: none
 }
 
-
-
-
-
-
-.chkbox__top {
-  display: block;
-  margin-top: 8px;
-}
-
+/* 希望コース */
 .common_chkbox {
   display: flex;
   flex-flow: column;
@@ -364,7 +337,8 @@
 }
 
 .chkbox input {
-  display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   margin-right: 8px;
 }
@@ -373,11 +347,6 @@
   position: relative;
   padding-left: 25px;
   font-size: 16px;
-  margin-top: 8px;
-}
-
-.chkbox label:first-of-type {
-  margin-top: 3px;
 }
 
 .chkbox input + label::before {
@@ -408,4 +377,38 @@
 .chkbox input:checked + label::after {
   opacity: 1;
 }
+
+/* 備考 */
+.biko_state {
+  box-sizing: border-box;
+  resize: none;
+  margin-top: 5px;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0 0 5px;
+  font-size: 13px;
+}
+
+/* アカウント作成 */
+.acount_made {
+  height: 47px;
+  border: 1px solid #01bfbd;
+  border-radius: 3px;
+  background-color: #01bfbd;
+  color: #fff;
+}
+
+.acount_made {
+  cursor : pointer;
+}
+
+
+
+
+
+
+
+
+
+
 
